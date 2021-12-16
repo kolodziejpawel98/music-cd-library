@@ -1,0 +1,80 @@
+main {
+    width: 100%;
+    text-align: center;
+}
+
+.script-content{
+    height: 800px;
+    width: 100%;
+}
+
+.navbar-brand{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.log-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    float: right;
+    margin-left: 50%;
+}
+
+#password-input{
+    height: 35px;
+    margin-right: 20px;
+}
+
+#password-checkbox{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+#password-checkbox:hover{
+    cursor: pointer;
+}
+
+.log-in p{
+    padding-top: 14px;
+    padding-left: 5px;
+}
+
+
+.left-side{
+    padding-top: 50px;
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.right-side{
+    float: right;
+    width: 80%;
+    height: 100%;
+}
+
+.form{
+    width: 200px;
+}
+
+table {
+    margin: 50px auto;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 2px solid #000;
+}
+
+th, td {
+    padding: 5px;
+}
+
+#cover-input, #author-input, #genre-input, #name-input, #search-input, #update-name-input{
+    height: 35px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}

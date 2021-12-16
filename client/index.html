@@ -2,11 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Music CD Library</title>
 </head>
 <body>
-    
+<main>
+    <nav class="navbar navbar-light bg-primary">
+        <a class="navbar-brand" href="#">Biblioteka CD</a>
+        <!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+        <!--                <span class="navbar-toggler-icon"></span>-->
+        <!--            </button>-->
+
+        <div class="log-in">
+            <input type="password" id="password-input" placeholder="wpisz haslo">
+            <button type="button" class="btn btn-warning" onclick="passwordCheck()">Potwierdź</button>
+            <input type="checkbox" id="password-checkbox" onclick="hideShow()"><p>Pokaż</p>
+        </div>
+    </nav>
+    <br>
+    <div class="left-side">
+        <input type="text" placeholder="okładka" id="cover-input">
+        <input type="text" placeholder="nazwa" id="name-input">
+        <input type="text" placeholder="autor" id="author-input">
+        <input type="text" placeholder="gatunek" id="genre-input">
+        <br>
+        <button type="button" class="btn btn-primary">Dodaj do biblioteki</button>
+
+
+        <br><br><br>
+        <div>
+            <input placeholder="wyszukaj po nazwie" id="search-input">
+            <!--        <button id="search-btn">Szukaj</button>-->
+            <button type="button" class="btn btn-secondary">Wyszukaj</button>
+        </div>
+    </div>
+    <div class="right-side">
+        <table id="table">
+            <thead>
+            <th>ID</th>
+            <th>Okładka</th>
+            <th>Nazwa</th>
+            <th>Autor</th>
+            <th>Data dodania</th>
+            <th>Gatunek</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <label>Name:</label>
+            <input type="text" id="update-name-input">
+            <!--        <button id="update-row-btn">Zapisz zmianę</button>-->
+            <button type="button" class="btn btn-dark">Zapisz zmianę</button>
+            <button type="button" class="btn btn-outline-dark">Anuluj</button>
+        </section>
+        <div hidden id="hidden-content">
+            <h3>Zawartość po wpisaniu hasła</h3>
+        </div>
+    </div>
+
+
+</main>
+<div class="script-content">
+    <script src="index.js"></script>
+</div>
 </body>
 </html>
